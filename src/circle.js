@@ -69,25 +69,25 @@
 	var each = _.each = _.forEach = function(obj, iterator, context) {
 		if (obj == null) return;
 		if (nativeForEach && obj.forEach === nativeForEach) {
-		  obj.forEach(iterator, context);
+			obj.forEach(iterator, context);
 		} else if (obj.length === +obj.length) {
-		  for (var i = 0, l = obj.length; i < l; i++) {
-		    if (i in obj && iterator.call(context, obj[i], i, obj) === breaker) return;
-		  }
+			for (var i = 0, l = obj.length; i < l; i++) {
+				if (i in obj && iterator.call(context, obj[i], i, obj) === breaker) return;
+			}
 		} else {
-		  for (var key in obj) {
-		    if (_.has(obj, key)) {
-		      if (iterator.call(context, obj[key], key, obj) === breaker) return;
-		    }
-		  }
+			for (var key in obj) {
+				if (_.has(obj, key)) {
+					if (iterator.call(context, obj[key], key, obj) === breaker) return;
+				}
+			}
 		}
 	};
 
 	_.extend = function(obj) {
 		each(slice.call(arguments, 1), function(source) {
-		  for (var prop in source) {
-		    obj[prop] = source[prop];
-		  }
+			for (var prop in source) {
+				obj[prop] = source[prop];
+			}
 		});
 		return obj;
 	};
@@ -103,7 +103,7 @@
 		appendTo : function(elem) {
 			this.getElement(elem).appendChild(this.domElement);
 			return this;
-    	}
+    		}
 	};
 
 	// Merge Object tool
