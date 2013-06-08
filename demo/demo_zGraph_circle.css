@@ -1,0 +1,13 @@
+body {
+	font-family: Helvetica,Corbel,Verdana,Arial,sans-serif;
+	font-size: small;
+}
+h1 {
+	font-size: large;
+}
+h2 {
+	font-size: medium;
+}
+canvas {
+	border:1px solid #4c4c4c;
+}

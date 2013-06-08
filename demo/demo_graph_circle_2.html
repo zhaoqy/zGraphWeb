@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<link href="demo_zGraph_circle.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="rendering-mode.js"></script>
+<!--[if IE]><script type="text/javascript" src="../excanvas/excanvas.js"></script><![endif]-->
+<script type="text/javascript" src="../src/circle.js"></script>
+<script type="text/javascript">
+window.onload = function() {
+	var items = [
+		["demo01", 150, "#ff8899"],
+		["demo02", 100],
+		["demo03", 80],
+		["demo04", 60],
+		["demo05", 30],
+		["demo06", 20],
+		["demo07", 10],
+		["demo08", 10],
+		["demo09", 10],
+		["demo10", 10],
+		["demo11", 10],
+		["demo12", 10]
+	];
+	var params = {
+		backgroundColor: "#eeffee",
+		shadow: false,
+		captionNum: false,
+		startAngle: -45,
+		otherCaption: "others"
+	};
+	var zg = new zGraph.circle("demo",{width:400,height:300}).appendTo(document.body);
+	zg.draw(items, params);
+};
+</script>
+</head>
+<body>
+<p>rendering mode : <span id="rendering-mode">-</span></p>
+</body>
+</html>
