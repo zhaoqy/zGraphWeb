@@ -53,7 +53,7 @@ appendTo(element)
 
 Arguments:
 
-- `element``: Added to the DOM node.
+- `element`: Added to the DOM node.
 
 ---
 
@@ -67,3 +67,24 @@ Arguments:
 - `object`: params (optional)
 
 ---
+```
+    attribute					default			
+------------------------------------------------------------
+    backgroundColor, 			--null         				
+    shadow, 					--true         				
+    border, 					--false        				
+    caption, 					--false        				
+    captionNum, 				--true         				
+    captionRate, 				--true         				
+    fontSize, 					--"12px"       				
+    fontFamily, 				--"Arial,sans-serif"        
+    textShadow, 				--true         				
+    captionColor, 				--"#ffffff"         		
+    startAngle, 				---90         				
+    legend, 					--true         				
+    legendFontSize, 			--"12px"         			
+    legendFontFamily, 			--"Arial,sans-serif"        
+    legendColor, 				--"#000000"         		
+    otherCaption, 				--"other"    
+------------------------------------------------------------
+```
