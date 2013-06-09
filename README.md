@@ -39,7 +39,7 @@ zg.draw(items, params);
 zGraph.circle
 ---
 ``` js
-zGraph.circle(string, object)
+zGraph.circle(string, [object])
 ```
 Arguments:
 
@@ -58,7 +58,7 @@ Arguments:
 ---
 
 ``` js
-draw(object, object)
+draw(object, [object])
 ```
 
 Arguments:
