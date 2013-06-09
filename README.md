@@ -5,6 +5,7 @@ Based on the HTML5 graphics library for web
 
 ### How to Use
 
+zGraph.circle
 ``` js
 
 // zGraph.circle
@@ -42,8 +43,8 @@ zGraph.circle(string, object)
 ```
 Arguments:
 
-- `string`: string for circle id.
-- `object`: Graphics of height and width.
+- `string`: circle id.
+- `object`: Graphics of height and width,default width=400,heigth=300.(optional)
 
 ---
 ``` js
@@ -52,7 +53,8 @@ appendTo(element)
 
 Arguments:
 
-- `element`: Added to the DOM node.
+- `element``: Added to the DOM node.
+
 ---
 
 ``` js
@@ -62,5 +64,6 @@ draw(object, object)
 Arguments:
 
 - `object`: data
-- `object`: params
+- `object`: params (optional)
+
 ---
